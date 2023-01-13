@@ -30,7 +30,7 @@
 }
 
 .app {
-    background-color: #2987a9;
+    background: #2a6c84;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -49,17 +49,17 @@
 }
 
 .app_calculator_navbar {
+    overflow: hidden;
     position: absolute;
     top: 0;
     left: 0;
+    width: 100%;
+    background-color: transparent;
     min-height: 40px;
     padding: 10px;
-    background-color: transparent;
-    overflow: hidden;
-    width: 100%;
     display: flex;
-    align-items: center;
     gap: 10px;
+    align-items: center;
 }
 
 .app_calculator_navbar img {

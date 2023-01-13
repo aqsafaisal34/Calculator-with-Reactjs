@@ -1,7 +1,8 @@
-import React from 'react';
-import './KeyPad.css';
+import React from "react";
 
-const KeyPad = (props) => {
+import "./KeyPad.css";
+
+function KeyPad(props) {
   const keys = [
     {
       keyCode: 55,
@@ -80,9 +81,10 @@ const KeyPad = (props) => {
       value: "+",
     },
   ];
+
   return (
-    <div className='keypad'>
-     <div className="keypad_keys">
+    <div className="keypad">
+      <div className="keypad_keys">
         {keys.map((item, index) => (
           <p
             onClick={() => props.handleKeyPress(item.keyCode, item.label)}
@@ -103,9 +105,8 @@ const KeyPad = (props) => {
           </p>
         ))}
       </div>
-
     </div>
-  )
+  );
 }
 
 export default KeyPad;
